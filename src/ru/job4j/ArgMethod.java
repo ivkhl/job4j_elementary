@@ -1,20 +1,16 @@
 package ru.job4j;
 
 public class ArgMethod {
-    public static void hello(String name) {
-        System.out.println("Hello, " + name);
-    }
 
-    public static void main(String[] args) {
-        String name = "Petr Arsentev";
-        int age = 33;
+        public static int func1( int x ){
+            int y = x * x +1;
+            return y;
+        }
 
-        // ArgMethod.hello(); - не имеет арументов
+        public static void main(String[] args) {
 
-        // ArgMethod.hello(name, age); - аргумент метода hello имеет только тип данных String в данном случае
+            int result1 = ArgMethod.func1(100);
+            System.out.println(result1);
 
-        // ArgMethod.hello(age); - имеет неправильный тип аргумента
-
-         ArgMethod.hello(name+" " + age);
-    }
+        }
 }
