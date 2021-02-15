@@ -2,9 +2,9 @@ package ru.job4j.condition;
 
 public class TrgArea {
     public static double area(double a, double b, double c) {
-        double halfperimeter = (a + b + c) /2;
-        double square = Math.sqrt(halfperimeter * (halfperimeter - a) * (halfperimeter - b) * (halfperimeter - c));
-        return square;
+        double hprm = (a + b + c) /2;
+        return Math.sqrt(hprm * (hprm - a) * (hprm - b) * (hprm - c));
+        // hprm means halfperimeter
     }
 
     public static void main(String[] args) {
